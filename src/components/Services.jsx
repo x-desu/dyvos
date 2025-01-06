@@ -4,6 +4,9 @@ import { useEffect } from "react";
 
 const Services = () => {
   useEffect(()=>{
+
+    let mm = gsap.matchMedia()
+
     gsap.fromTo('.service > *',
       {opacity:0,y:"100vh"},
       {opacity:1,
@@ -18,6 +21,26 @@ const Services = () => {
           ease: 'power3.out' }
         }
     )
+
+    //mobile
+    mm.add("(max-width: 1024px)",()=>{
+      gsap.fromTo(".service2 > div", {
+        opacity: 0,
+        y: 100,
+      }, {
+        opacity: 1,
+        y: 0,
+        duration:1,
+        scrollTrigger: {
+          trigger: ".service2",
+          start: "top 80%",
+          stagger:0.3,
+          end: "top 20%",
+          scrub: true,
+         
+        }
+      });
+    })
   },[])
   return (
     <div className="bg-light py-16 px-8 ">
@@ -49,7 +72,7 @@ const Services = () => {
           </div>
 
           {/* Right Section */}
-          <div className="lg:w-7/12 grid grid-cols-1 md:grid-cols-2 gap-6 service">
+          <div className="lg:w-7/12 grid grid-cols-1 md:grid-cols-2 gap-6 lg:service service2">
             {/* Card 1 */}
             <div className="bg-white p-8 py-12 rounded-xl group shadow text-center hover:bg-primary hover:text-white transition-all ease-in-out duration-300">
               <div className="flex justify-center items-center bg-light hover:bg-white text-white w-20 h-20 rounded-full mx-auto mb-4">
