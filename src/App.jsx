@@ -2,7 +2,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 // Import your components
-import HomePage from './components/HomePage';
+import HomePage from './Components/HomePage';
 import { RootLayout } from './Layout/RootLayout';
 import Errorboundary from './Components/Errorboundary';
 import AboutPage from './Components/About';
