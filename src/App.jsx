@@ -8,7 +8,7 @@ import Errorboundary from './components/Errorboundary.jsx';
 
 
 import AboutPage from './components/About.jsx';
-import Homepage from './components/HomePage.jsx';
+import Homepage from './components/Homepage.jsx'
 
 // Define the routes
 const router = createBrowserRouter([
