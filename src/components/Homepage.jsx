@@ -9,10 +9,10 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useEffect } from "react";
 import Reviews from "./Reviews.jsx";
 
-gsap.registerPlugin(ScrollTrigger);
 const Homepage = () => {
-
+  gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
+    
     let mm = gsap.matchMedia()
     mm.add("(max-width: 1024px)",()=>{
       gsap.fromTo(".sub-1-section >*", {

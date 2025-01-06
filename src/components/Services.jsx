@@ -15,10 +15,11 @@ const Services = () => {
         stagger:0.5,
         scrollTrigger:{
           trigger:'.service',
-          start:'top 80%',
-          end:'top 30%',
+          start:'top 75%',
+          end:'top 35%',
           scrub: true,
-          ease: 'power3.out' }
+          ease: 'power3.out',
+        }
         }
     )
 
@@ -72,7 +73,7 @@ const Services = () => {
           </div>
 
           {/* Right Section */}
-          <div className="lg:w-7/12 grid grid-cols-1 md:grid-cols-2 gap-6 lg:service service2">
+          <div className="lg:w-7/12 grid grid-cols-1 md:grid-cols-2 gap-6 service service2">
             {/* Card 1 */}
             <div className="bg-white p-8 py-12 rounded-xl group shadow text-center hover:bg-primary hover:text-white transition-all ease-in-out duration-300">
               <div className="flex justify-center items-center bg-light hover:bg-white text-white w-20 h-20 rounded-full mx-auto mb-4">
