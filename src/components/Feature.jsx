@@ -8,14 +8,13 @@ const Feature = () => {
       {opacity:0,y:"50vh"},
       {opacity:1,
         y:0,
-        duration:1.5,
+        duration:2.5,
         stagger:0.5,
         scrollTrigger:{
           trigger:'.feature',
           start:'top 80%',
           end:'top 30%',
           scrub: true,
-          once:true,
           ease: 'power4.out' }
         }
     )
