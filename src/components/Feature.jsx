@@ -9,7 +9,7 @@ const Feature = () => {
       {opacity:1,
         y:0,
         duration:1.5,
-        stagger:0.3,
+        stagger:0.5,
         scrollTrigger:{
           trigger:'.feature',
           start:'top 80%',

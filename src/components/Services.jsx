@@ -5,11 +5,11 @@ import { useEffect } from "react";
 const Services = () => {
   useEffect(()=>{
     gsap.fromTo('.service > *',
-      {opacity:0,y:"50vh"},
+      {opacity:0,y:"100vh"},
       {opacity:1,
         y:0,
-        duration:1,
-        stagger:0.3,
+        duration:2,
+        stagger:0.5,
         scrollTrigger:{
           trigger:'.service',
           start:'top 80%',
@@ -29,18 +29,24 @@ const Services = () => {
             <div className="border  rounded-full px-4 py-2 mb-4 inline-block text-sm">
               Our Services
             </div>
+            <div>
             <h1 className="text-3xl font-semibold mb-4">
             Transforming Healthcare with Advanced AI Solutions
             </h1>
+            </div>
+            <div>
             <p className="mb-8 text-secondary">
             Harness the power of AI to revolutionize healthcare. From advanced diagnosis to efficient management systems, we bring cutting-edge solutions tailored to the needs of modern healthcare systems. Empower your business with technology that drives better outcomes for patients and providers alike.
             </p>
+            </div>
+            <div>
             <a
               href="#"
               className="bg-primary text-white px-6 py-3 rounded-full hover:bg-blue-600 "
-            >
+              >
               Read More
             </a>
+              </div>
           </div>
 
           {/* Right Section */}

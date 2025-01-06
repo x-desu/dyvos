@@ -21,9 +21,9 @@ const Homepage = () => {
       }, {
         opacity: 1,
         y: 0,
-        stagger:0.3,
-        delay:0.5,
-        duration:1,
+        stagger:0.5,
+        delay:1,
+        duration:2,
         scrollTrigger: {
           trigger: ".sub-1-section",
           start: "top 70%",
