@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-const Review = () => {
+const Reviews = () => {
     const [currentSlide,setCurrentSlide]= useState(0)
    
 
@@ -52,4 +52,4 @@ const Review = () => {
   )
 }
 
-export default Review
+export default Reviews

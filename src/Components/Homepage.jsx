@@ -1,15 +1,13 @@
 import gsap from "gsap";
 import Faq from "./Faq";
 import Feature from "./Feature";
-import Footer from "./Footer";
 import Hero from "./Hero";
 import Newsletter from "./Newsletter";
-import Review from "./Review";
 import Services from "./Services";
 import Sub_1 from "./Sub_1";
-import Team from "./Team";
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useEffect } from "react";
+import Reviews from "./Reviews";
 
 gsap.registerPlugin(ScrollTrigger);
 const Homepage = () => {
@@ -58,7 +56,7 @@ const Homepage = () => {
      <Services/>
      <Feature/>
      <Faq/>
-     <Review/>
+     <Reviews/>
      <Newsletter/>
     </>
   );
