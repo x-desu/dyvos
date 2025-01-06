@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 // Import your components
 
-import { RootLayout } from './Layout/RootLayout';
+import { RootLayout } from './layout/RootLayout';
 import Errorboundary from './components/Errorboundary';
 
 
