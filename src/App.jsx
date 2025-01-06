@@ -2,10 +2,13 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 // Import your components
-import HomePage from './Components/HomePage';
+
 import { RootLayout } from './Layout/RootLayout';
-import Errorboundary from './Components/Errorboundary';
-import AboutPage from './Components/About';
+import Errorboundary from './components/Errorboundary';
+
+
+import AboutPage from './components/About';
+import Homepage from './components/HomePage';
 
 // Define the routes
 const router = createBrowserRouter([
@@ -15,7 +18,7 @@ const router = createBrowserRouter([
     errorElement:<Errorboundary/>,
     children:[
         {path:'/',
-            element:<HomePage/>
+            element:<Homepage/>
         },
         {
           path:'/about',
