@@ -3,12 +3,12 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 // Import your components
 
-import { RootLayout } from './layout/RootLayout';
-import Errorboundary from './components/Errorboundary';
+import { RootLayout } from './layout/RootLayout.jsx';
+import Errorboundary from './components/Errorboundary.jsx';
 
 
-import AboutPage from './components/About';
-import Homepage from './components/HomePage';
+import AboutPage from './components/About.jsx';
+import Homepage from './components/HomePage.jsx';
 
 // Define the routes
 const router = createBrowserRouter([

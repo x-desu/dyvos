@@ -1,13 +1,13 @@
 import gsap from "gsap";
 import Faq from "./Faq";
-import Feature from "./Feature";
-import Hero from "./Hero";
-import Newsletter from "./Newsletter";
-import Services from "./Services";
-import Sub_1 from "./Sub_1";
+import Feature from "./Feature.jsx";
+import Hero from "./Hero.jsx";
+import Newsletter from "./Newsletter.jsx";
+import Services from "./Services.jsx";
+import Sub_1 from "./Sub_1.jsx";
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useEffect } from "react";
-import Reviews from "./Reviews";
+import Reviews from "./Reviews.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
 const Homepage = () => {
