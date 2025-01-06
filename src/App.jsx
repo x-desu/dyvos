@@ -9,6 +9,9 @@ import Errorboundary from './components/Errorboundary.jsx';
 
 import AboutPage from './components/About.jsx';
 import Homepage from './components/Homepage.jsx'
+import TermsAndConditions from './components/termscon.jsx';
+import PrivacyPolicy from './components/Privacy.jsx';
+import CookiesPolicy from './components/Cookies.jsx';
 
 // Define the routes
 const router = createBrowserRouter([
@@ -23,6 +26,18 @@ const router = createBrowserRouter([
         {
           path:'/about',
           element:<AboutPage/>
+        },
+        {
+          path:"/terms-conditions",
+          element:<TermsAndConditions/>
+        },
+        {
+          path:"/privacy-policy",
+          element:<PrivacyPolicy/>
+        },
+        {
+          path:"/cookies",
+          element:<CookiesPolicy/>
         }
     ]
   },

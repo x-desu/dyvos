@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import logo from '/logo.jpeg'
 
 const Footer = () => {
@@ -119,14 +120,6 @@ const Footer = () => {
               <li>
                 <a href="#" className="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
               </li>
-  
-              <li>
-                <a href="#" className="text-gray-700 transition hover:opacity-75"> HR Consulting </a>
-              </li>
-  
-              <li>
-                <a href="#" className="text-gray-700 transition hover:opacity-75"> SEO Optimisation </a>
-              </li>
             </ul>
           </div>
   
@@ -153,17 +146,17 @@ const Footer = () => {
       <div className="mt-12 border-t border-gray-100 pt-12">
         <div className="sm:flex sm:items-center sm:justify-between">
           <ul className="flex flex-wrap gap-4 text-xs">
-            <li>
-              <a href="#" className="text-gray-500 transition hover:opacity-75"> Terms & Conditions </a>
-            </li>
+            <Link to="/terms-conditions" className="text-gray-500 transition hover:opacity-75">
+                Terms & Conditions
+            </Link>
   
-            <li>
-              <a href="#" className="text-gray-500 transition hover:opacity-75"> Privacy Policy </a>
-            </li>
+            <Link to="/privacy-policy" className="text-gray-500 transition hover:opacity-75">
+               Privacy Policy
+            </Link>
   
-            <li>
-              <a href="#" className="text-gray-500 transition hover:opacity-75"> Cookies </a>
-            </li>
+            <Link to="/cookies" className="text-gray-500 transition hover:opacity-75">
+               Cookies
+            </Link>
           </ul>
   
           <p className="mt-8 text-xs text-gray-500 sm:mt-0">
