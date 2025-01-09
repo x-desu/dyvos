@@ -8,6 +8,7 @@ import Sub_1 from "./Sub_1.jsx";
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useEffect } from "react";
 import Reviews from "./Reviews.jsx";
+import { Bounce, ToastContainer } from 'react-toastify';
 
 const Homepage = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -58,6 +59,19 @@ const Homepage = () => {
      <Faq/>
      <Reviews/>
      <Newsletter/>
+     <ToastContainer
+      position="bottom-right"
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick={false}
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      theme="light"
+      transition={Bounce}
+      />
     </>
   );
 };

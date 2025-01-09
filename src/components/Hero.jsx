@@ -1,8 +1,10 @@
 // Hero.jsx
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import heroImg from '/hero-img.png'
 import gsap from 'gsap';
+import Dialog from './Dialog';
 const Hero = () => {
+  const dialogref = useRef()
   useEffect(()=>{
     gsap.fromTo('.herosection > *',
       {opacity:0,x:100},
@@ -36,12 +38,15 @@ const Hero = () => {
                 >
                   Read More
                 </a>
-                <a
-                  href="#"
-                  className="border border-white text-white px-6 py-3 rounded-full shadow hover:bg-white hover:text-blue-600"
+                <span
+                 onClick={()=>dialogref.current.show()}
+                  className="border border-white text-white px-6 py-3 rounded-full shadow hover:bg-white hover:text-blue-600 cursor-pointer"
                 >
                   Contact Us
-                </a>
+                </span>
+                <Dialog 
+                ref={dialogref}
+                />
               </div>
             </div>
 
