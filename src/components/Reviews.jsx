@@ -26,7 +26,7 @@ const Reviews = () => {
             <span>Testimonial</span>
         </div>
         <h1 className="text-2xl lg:text-4xl font-semibold">What our Clients say!</h1>
-        <p >Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+        <p >Thousands of forward-thinking businesses rely on DYVOS everyday to turbo-charge their business financial operations</p>
         </div>
     <div className="flex sm:flex-row flex-col w-full my-8 justify-center items-center ">
         <div className="sm:w-1/2 h-1/2 sm:h-full flex flex-col justify-center gap-4 p-8  lg:w-full">
