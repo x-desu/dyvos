@@ -128,16 +128,10 @@ const Footer = () => {
   
             <ul className="mt-6 space-y-4 text-sm text-center">
               <li>
-                <a href="#" className="text-gray-700 transition hover:opacity-75"> About </a>
+                <Link to='/about' href="#" className="text-gray-700 transition hover:opacity-75"> About </Link>
               </li>
   
-              <li>
-                <a href="#" className="text-gray-700 transition hover:opacity-75"> Meet the Team </a>
-              </li>
-  
-              <li>
-                <a href="#" className="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
-              </li>
+              
             </ul>
           </div>
         </div>
